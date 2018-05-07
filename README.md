@@ -4,9 +4,9 @@ combines https://docs.microsoft.com/en-us/azure/hdinsight/r-server/r-server-hdin
 
 ```PowerShell
 Submit-AzureRmHDInsightScriptAction `
-            -ClusterName "your-hdinsight-001" `
+            -ClusterName "your-hdinsight-clustername" `
             -Name "addUser" `
-            -Uri "<script action URI>" `
+            -Uri "https://raw.githubusercontent.com/cosh/HDInsightUserCreation/master/adduser.sh" `
             -NodeTypes EdgeNode 
             -PersistOnSuccess
             -Parameters "username userPassword123#"
