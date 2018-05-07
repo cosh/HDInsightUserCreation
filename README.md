@@ -2,7 +2,7 @@
 
 combines https://docs.microsoft.com/en-us/azure/hdinsight/r-server/r-server-hdinsight-manage & https://docs.microsoft.com/de-de/powershell/module/azurerm.hdinsight/Submit-AzureRmHDInsightScriptAction?view=azurermps-5.7.0 
 
-<code></code><code>PowerShell
+```
 Login-AzureRmAccount
 
 Submit-AzureRmHDInsightScriptAction 
@@ -13,4 +13,4 @@ Submit-AzureRmHDInsightScriptAction
             -NodeTypes EdgeNode 
             -PersistOnSuccess
             -Parameters "username userPassword123#"
-</code><code></code>
+```
